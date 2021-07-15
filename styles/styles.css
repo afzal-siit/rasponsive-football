@@ -104,17 +104,37 @@ p{
     color: #6C6C6C;
 }
 /* foooter styles */
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
 .football-image img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 483.87px;
     height: 110px;  
 }
-.social-icon{
-    text-align: center;
-}
+
 .copyright{
     font-size: 18px;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Mobile Devices Media Quary */
+@media only screen and (max-width:688px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .heading{
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        
+    }
+    
+    .content{
+        width: 100%;
+    }
+    .best-player{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
